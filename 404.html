@@ -3,7 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/threadbound/favicon.svg" />
+    <link rel="apple-touch-icon" href="/threadbound/favicon.svg" />
+    <link rel="manifest" href="/threadbound/manifest.webmanifest" />
+    <meta name="theme-color" content="#bd982f" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      // Applied before first paint to avoid a flash of the wrong theme preset
+      // (see src/lib/theme.js — kept in sync manually since this runs before
+      // any module import is possible).
+      try {
+        var t = localStorage.getItem('threadbound.theme');
+        if (t) document.documentElement.dataset.theme = t;
+      } catch (e) {}
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -11,8 +23,8 @@
       rel="stylesheet"
     />
     <title>Threadbound</title>
-    <script type="module" crossorigin src="/threadbound/assets/index-CVyYK65B.js"></script>
-    <link rel="stylesheet" crossorigin href="/threadbound/assets/index-Ce91Zo25.css">
+    <script type="module" crossorigin src="/threadbound/assets/index-B8SW2U_4.js"></script>
+    <link rel="stylesheet" crossorigin href="/threadbound/assets/index-TpIYYQoL.css">
   </head>
   <body>
     <div id="root"></div>

@@ -1,0 +1,14 @@
+{
+  "name": "Threadbound",
+  "short_name": "Threadbound",
+  "description": "An AI-enabled virtual tabletop for Jason's system — shared board, characters, and a rules compendium.",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#faf8f3",
+  "theme_color": "#bd982f",
+  "icons": [
+    { "src": "favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}
